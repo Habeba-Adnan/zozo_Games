@@ -1,0 +1,51 @@
+.container .footer{
+    display: flex;
+    justify-content: space-between;
+    grid-row-gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+}
+.container .footer .footer1{
+    width: 24%;
+}
+.footer .footer1 h2{
+    font-family: 'Capriola', sans-serif;
+    font-size: 19px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.footer .footer1 section{
+    font-family: 'Capriola', sans-serif;
+    font-size: 14px;
+    padding-right: 16px;
+}
+.footer .footer1 li{
+    list-style-type: none;
+    font-size: 14px;
+}
+.footer .footer1 li a{
+    font-family: 'Capriola', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+}
+.footer .footer1 .footer-logo{
+    margin-top: 30px;
+}
+.footer1 .footer-logo img{
+    width: 100%;
+}
+.container hr{
+    background: #000;
+    margin: 15px 0px;
+    height: 2px;
+    width: 100%;
+}
+.container .copy{
+    margin: 15px 0px;
+    text-align: center;
+}
+.container .copy section{
+    font-size: 14px;
+    text-transform: capitalize;
+}

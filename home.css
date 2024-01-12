@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  height: 3000px;
+  background: radial-gradient(circle, rgba(238, 174, 202, 0.4) 0%, rgba(148, 187, 233, 0.5) 100%);
+
+}
+
+.navbar {
+  margin: 0;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  height: 90px;
+  font-family: 'Chivo', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  background-color: #f2f2f2;
+}
+
+.navbar .container-fluid {
+  margin-bottom: 0;
+  background-color: #f2f2f2;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.nav-item .nav-link:hover {
+  color: #A367B1;
+}
+
+.dropdown-item:hover {
+  color: #A367B1;
+}
+
+.navbar-brand {
+  background-color: white;
+  padding: 0.9rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-brand:hover {
+  color: #A367B1;
+}
+
+.enterImage {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+
+}
+
+.header .container h1 {
+  font-size: 4rem;
+  color: #A367B1;
+  font-family: 'Chivo', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.header .container h1 span {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #A367B1;
+  color: #fff;
+  font-family: 'Chivo', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.header .container h3 {
+  font-family: 'Chivo', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  color: #A367B1;
+}
+
+
+.enterImage2 {
+  margin-top: 3rem;
+
+}
+
+.games {
+  margin-top: 10rem;
+}
+
+.games h2 {
+  font-size: 4rem;
+  color: #A367B1;
+  font-family: 'Chivo', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  margin-bottom: 4rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card .card-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .card-img-top {
+
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+.card-overlay h5{
+  font-weight: 700;
+}
+.card-overlay p{
+  font-size:larger;
+  font-weight: 600;
+}
+
+.card-overlay .btn {
+  width: 8rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #A367B1;
+}
+
+.card-overlay .btn:hover {
+  background-color: rgba(163, 103, 177, 0.8);
+}
+
+
+.header3 {
+  margin-top: 10rem;
+}
+
+.container .row h2 {
+  font-size: 4rem;
+  color: #A367B1;
+  font-family: 'Chivo', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  margin-bottom: 4rem;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+
+  max-width: 1200px;
+  position: relative;
+}
+
+.wrapper i {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover {
+  background: #f2f2f2;
+}
+
+.wrapper i:first-child {
+  left: -22px;
+  display: none;
+  z-index: 1;
+}
+
+.wrapper i:last-child {
+  right: -22px;
+}
+
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
+}
+
+.carousel img {
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+
+.about {
+  margin-top: 8rem;
+}
+
+.about h2 {
+  font-size: 4rem;
+  color: #A367B1;
+  font-family: 'Luckiest Guy', cursive;
+  margin-bottom: 4rem;
+}
+
+.about .img-fluid {
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about h4 {
+  color: #000;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+/* footer section */
+footer {
+  margin-top: 5rem;
+}
+
+footer .container-fluid {
+  margin-bottom: 2rem;
+}
+
+.zozo_footer {
+  background-color: white;
+  padding: 0.9rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  font-family: 'Chivo', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  color: #000;
+  margin-left: 3rem;
+}
+.zozo_footer:hover{
+  color: #A367B1;
+}
+
+#sidep {
+  text-align: center;
+  color: #A367B1;
+  font-family: 'Chivo', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2rem;
+}
+
+.container .footer {
+  display: flex;
+  justify-content: space-between;
+  grid-row-gap: 20px;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+}
+
+.container .footer .footer1 {
+  width: 20%;
+}
+
+.container .footer .footer-second {
+  width: 38%;
+}
+
+.footer .footer1 h2 {
+  font-family: 'Capriola', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1b2f5f;
+  text-transform: capitalize;
+}
+
+.footer .footer1 section {
+  font-family: 'Capriola', sans-serif;
+  font-size: 14px;
+  padding-right: 16px;
+}
+
+.footer .footer1 li {
+  list-style-type: none;
+  font-size: 14px;
+
+}
+
+.footer .footer1 li a {
+  font-family: 'Capriola', sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #486183;
+}
+
+.footer .footer1 .footer-logo {
+  margin-top: 30px;
+}
+
+.footer1 .footer-logo img {
+  width: 100%;
+}
+
+.container hr {
+  background: #000;
+  margin: 15px 0px;
+  height: 2px;
+  width: 100%;
+}
+
+.container .copy {
+  margin: 15px 0px;
+  text-align: center;
+  color: #486183;
+}
+
+.container .copy section {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+#special {
+  font-family: 'Capriola', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1b2f5f;
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: #a700fa;
+  color: white;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .container .footer .footer1 {
+    width: 30%;
+  }
+
+  .container .footer .footer-second {
+    width: 70%;
+  }
+
+}
