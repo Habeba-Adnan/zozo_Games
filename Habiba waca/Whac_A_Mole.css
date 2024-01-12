@@ -1,0 +1,74 @@
+body {
+    background: url(mario-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:1200px) {
+    body {
+        background-size: 100% 100vh;
+    }
+ }
+#title2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+#score{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.25rem;
+}
+#soil{
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 16%;
+    background-color: blueviolet;
+    background: url(soil.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px white solid;
+}
+
+@media(max-width:1200px) {
+    body {
+        background-size: 100% 100vh;
+    }
+ }
+
+#soil div{
+    width: 9rem;
+    height: 9rem;
+    padding: 0.25rem;  
+    background: url(pipe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#soil div img{
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#btn{
+    background-color: black;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 20%;
+    cursor: pointer;
+}
