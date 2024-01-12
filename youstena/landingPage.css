@@ -1,0 +1,75 @@
+#Img1{
+    width: 100%;
+    height: 100vh;
+}
+#Img2{
+    margin-right: 10px;
+    width: 40%;
+    height: 100%;
+}
+.card{
+    position: relative;
+}
+
+.animated-div{
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    animation: moveAnimation 5s 1;
+    width: 60%;
+    height: 70vh;
+    padding: 3%;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.animated-div button{
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+}
+
+@keyframes moveAnimation {
+0%{
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(0.5);
+}
+50%{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+100%{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+}
+
+@media  (max-width : 768px) {
+    .animated-div{
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .animated-div h1,h5{
+        font-size: 20px;
+        text-align: center;
+    }
+    .animated-div button{
+        margin-top: -10px;
+        margin-bottom: 5px;
+        margin-left:32% ;
+        height: 30px;
+        width: 70px;
+    }
+    #Img2 {
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    
+}
