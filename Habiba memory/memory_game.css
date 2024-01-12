@@ -1,0 +1,130 @@
+/* *{
+  box-sizing: border-box;
+} */
+
+#splash{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #95bd92;
+  opacity: 0.7;
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#btn{
+  border-radius: 1rem;
+  background-color: #061d05;
+  opacity: 1;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  height: 5rem;
+  cursor: pointer;
+}
+
+#title2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size:6rem;
+  color: #347230;
+
+}
+
+#NameBox{
+  max-width: 90%;
+  width: 45rem;
+  height: 2rem;
+  background-color:#d4f3d2 ;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border: #347230 solid 0.11rem;
+  margin: auto;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+.container{
+  max-width: 90%;
+  width: 47rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: auto;
+  padding: 0rem;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin-top: 0.25; */
+}
+.container.no-click{
+  pointer-events: none;
+}
+.img-fluid{
+  display: flex;
+  width: 8rem;
+  margin: 0.5rem;
+  border: #347230 solid 1px;
+  height: 10rem;
+  cursor: pointer;
+  flex-wrap: wrap;
+  /* max-width: calc(90%/5); */
+}
+
+.CardGame {
+  width: 8rem;
+  height: 10rem;
+  perspective: 1000px;
+  margin: 0.5rem;
+  
+}
+
+.Card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.9s ease;
+  
+}
+
+/* .Card.clicked .front {
+  transform: rotateY(180deg);
+} */
+.CardGame.clicked .front,
+.CardGame.matched .front{
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+.CardGame.clicked .back,
+.CardGame.matched .back {
+  transform: rotateY(0);
+}
+/* .Card.clicked .back {
+  transform: rotateY(0);
+} */
+
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(0deg);
+  
+}
+
+.back {
+  transform: rotateY(180deg);
+ 
+}

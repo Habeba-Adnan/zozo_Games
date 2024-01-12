@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="memory_game.css" />
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+
+    <div id="splash">
+      <button type="button" id="btn">Start Game</button>
+    </div>
+
+    <div id="title2">Memory Game Fruit</div>
+
+    <div id="NameBox">
+      <span id="Hello">Hello: <span id="Name"></span></span>
+      <span id="WrongTries">Wrong Tries: <span id="number">0</span></span>
+    </div>
+
+    <div class="container">
+      <div class="CardGame" data-fruits="pinaple">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="pinaple.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="pinaple">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="pinaple.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="apple">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="apple.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="apple">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="apple.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="banana">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="banana.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="banana">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="banana.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="kiwi">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="kiwi.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="kiwi">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="kiwi.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="orange">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="orange.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="orange">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="orange.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="fig">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="fig.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="fig">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="fig.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="pear">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="pear.PNG" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="pear">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="pear.PNG" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="strawberry">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="strawberry.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="strawberry">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="strawberry.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="watermelon">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="watermelon.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="watermelon">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="watermelon.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="berry">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="berry.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="CardGame" data-fruits="berry">
+        <div class="Card">
+          <div class="front">
+            <img class="img-fluid" src="q7.jpg" />
+          </div>
+          <div class="back">
+            <img class="img-fluid" src="berry.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="success" src="success.mp3"></audio>
+    <audio id="fail" src="fail.mp3"></audio>
+    <script>
+     
+    </script>
+    <script src="memory_game.js"></script>
+  </body>
+</html>
